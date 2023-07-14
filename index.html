@@ -39,6 +39,10 @@
       </div>
     </header>
     <!-- End Header -->
+    <div class="scroll-to-top"" style="display: block;">
+      <span></span>
+    </div>
+    
     <!-- Start Landing -->
     <div class="landing">
       <div class="overlay"></div>
@@ -58,9 +62,9 @@
       <i class="fas fa-angle-left change-background fa-2x"></i>
       <i class="fas fa-angle-right change-background fa-2x"></i>
       <ul class="bullets">
-        <li></li>
-        <li class="active"></li>
-        <li></li>
+        <li class="one"></li>
+        <li class="two active"></li>
+        <li class="three"></li>
       </ul>
     </div>
     <!-- End Landing -->
@@ -146,72 +150,104 @@
           </p>
         </div>
         <ul class="shuffle">
-          <li class="active">All</li>
-          <li>App</li>
-          <li>Photo</li>
-          <li>Web</li>
-          <li>Print</li>
+          <li class="all active">All</li>
+          <li class="App">App</li>
+          <li class="Photo">Photo</li>
+          <li class="Web">Web</li>
+          <li class="Print">Print</li>
         </ul>
       </div>
       <div class="imgs-container">
-        <div class="box">
+        <div class="box0">
           <img decoding="async" src="images/shuffle-01.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box1">
           <img decoding="async" src="images/shuffle-02.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box2">
           <img decoding="async" src="images/shuffle-03.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box3">
           <img decoding="async" src="images/shuffle-04.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box4">
           <img decoding="async" src="images/shuffle-05.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box5">
           <img decoding="async" src="images/shuffle-06.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box6">
           <img decoding="async" src="images/shuffle-07.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box7">
           <img decoding="async" src="images/shuffle-08.jpg" alt="" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
+        <div class="box7 a">
+          <img decoding="async" src="images/cat-07.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box7 b">
+          <img decoding="async" src="images/cat-08.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box7 c">
+          <img decoding="async" src="images/cat-04.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box7 d">
+          <img decoding="async" src="images/cat-05.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
       </div>
-      <a href="#" class="more">More</a>
+      <div style="display: flex;">
+      <p class="more">More</p>
+      <p class="more hide">Hide</p>
+    </div>
+      
     </div>
     <!-- End Portfolio -->
     <!-- Start Video -->
@@ -306,25 +342,25 @@
           <div class="prog-holder">
             <h4>Adobe</h4>
             <div class="prog">
-              <span style="width: 90%" data-progress="90%"></span>
+              <span style="width: 0%" data-progress="90%"></span>
             </div>
           </div>
           <div class="prog-holder">
             <h4>Html &amp; Css</h4>
             <div class="prog">
-              <span style="width: 85%" data-progress="85%"></span>
+              <span style="width: 0%" data-progress="85%"></span>
             </div>
           </div>
           <div class="prog-holder">
             <h4>JavaScript</h4>
             <div class="prog">
-              <span style="width: 80%" data-progress="80%"></span>
+              <span style="width: 0%" data-progress="80%"></span>
             </div>
           </div>
           <div class="prog-holder">
             <h4>Php</h4>
             <div class="prog">
-              <span style="width: 90%" data-progress="90%"></span>
+              <span style="width: 0%" data-progress="90%"></span>
             </div>
           </div>
         </div>
@@ -353,7 +389,7 @@
           <div class="plan">
             <div class="head">
               <h3>Basic</h3>
-              <span>19</span>
+              <span data-goal="19">0</span>
             </div>
             <ul>
               <li>Feature No 1</li>
@@ -368,7 +404,7 @@
           <div class="plan">
             <div class="head">
               <h3>Premium</h3>
-              <span>29</span>
+              <span data-goal="29">0</span>
             </div>
             <ul>
               <li>Feature No 1</li>
@@ -383,7 +419,7 @@
           <div class="plan">
             <div class="head">
               <h3>Pro</h3>
-              <span>39</span>
+              <span data-goal="39">0</span>
             </div>
             <ul>
               <li>Feature No 1</li>
@@ -398,7 +434,7 @@
           <div class="plan">
             <div class="head">
               <h3>Platinum</h3>
-              <span>49</span>
+              <span data-goal="49">0</span>
             </div>
             <ul>
               <li>Feature No 1</li>
@@ -469,9 +505,10 @@
           <i><a href="https://api.whatsapp.com/send/?phone=201067921420&text&type=phone_number&app_absent=0" target="_blank" class="fas fa-home"></a> </i>
           <i ><a href="https://www.linkedin.com/in/%D8%A7%D8%AD%D9%85%D8%AF-%D8%A7%D8%B4%D8%B1%D9%81-8a3000269/" target="_blank" class="fab fa-linkedin"></a></i>
         </div>
-        <p class="copyright">&copy; 2023 <span>Kasper</span> All Right Reserved</p>
+        <p class="copyright"></p>
       </div>
     </div>
     <!-- End Footer -->
+    <script src="main.js"></script>
   </body>
 </html>
