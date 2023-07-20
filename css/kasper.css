@@ -192,7 +192,7 @@
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-  }
+}
   .landing .overlay {
     position: absolute;
     left: 0;
@@ -391,7 +391,7 @@
     flex-wrap: wrap;
     margin-top: 60px;
   }
-  .portfolio .imgs-container .box0,.box1,.box2,.box3,.box4,.box5,.box6,.box7 {
+  .portfolio .imgs-container .box{
     overflow: hidden;
     position: relative;
   }
@@ -402,27 +402,27 @@
     display: inline;
     cursor: pointer;
   }
-  .portfolio .imgs-container .box0:hover .caption,.box1:hover .caption,.box2:hover .caption,.box3:hover .caption,.box4:hover .caption,.box5:hover .caption,.box6:hover .caption,.box7:hover .caption {
+  .portfolio .imgs-container .box:hover .caption{
     bottom: 0;
   }
-  .portfolio .imgs-container .box0:hover img,.box1:hover img,.box2:hover img,.box3:hover img,.box4:hover img,.box5:hover img,.box6:hover img,.box7:hover img {
+  .portfolio .imgs-container .box:hover img{
     transform: rotate(3deg) scale(1.1);
   }
   @media (min-width: 768px) {
-    .portfolio .imgs-container .box0,.box1,.box2,.box3,.box4,.box5,.box6,.box7 {
+    .portfolio .imgs-container .box{
       flex-basis: 50%;
     }
   }
   @media (min-width: 1199px) {
-    .portfolio .imgs-container .box0,.box1,.box2,.box3,.box4,.box5,.box6,.box7 {
+    .portfolio .imgs-container .box{
       flex-basis: 25%;
     }
   }
-  .portfolio .imgs-container .box0 img,.box1 img,.box2 img,.box3 img,.box4 img,.box5 img,.box6 img,.box7 img {
+  .portfolio .imgs-container .box img {
     max-width: 100%;
     transition: 0.3s;
   }
-  .portfolio .imgs-container .box0 .caption,.box1 .caption,.box2 .caption,.box3 .caption,.box4 .caption,.box5 .caption,.box6 .caption,.box7 .caption {
+  .portfolio .imgs-container .box .caption{
     position: absolute;
     left: 0;
     padding: 20px;
@@ -431,11 +431,11 @@
     transition: 0.3s;
     bottom: -100%;
   }
-  .portfolio .imgs-container .box0 .caption h4,.box1 .caption h4,.box2 .caption h4,.box3 .caption h4,.box4 .caption h4,.box5 .caption h4,.box6 .caption h4,.box7 .caption h4 {
+  .portfolio .imgs-container .box .caption h4 {
     font-weight: normal;
     margin-bottom: 10px;
   }
-  .portfolio .imgs-container .box0 .caption p,.box1 .caption p,.box2 .caption p,.box3 .caption p,.box4 .caption p,.box5 .caption p,.box6 .caption p,.box7 .caption p {
+  .portfolio .imgs-container .box .caption p{
     color: var(--main-color);
   }
   .portfolio .more {
