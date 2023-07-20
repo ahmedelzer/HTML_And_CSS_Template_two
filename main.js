@@ -10,9 +10,7 @@ let App=document.querySelector(".portfolio .shuffle .App");
 let Photo=document.querySelector(".portfolio .shuffle .Photo");
 let Web=document.querySelector(".portfolio .shuffle .Web");
 let Print=document.querySelector(".portfolio .shuffle .Print");
-let imgs=[document.querySelector(".portfolio .imgs-container .box0"),document.querySelector(".portfolio .imgs-container .box1"),document.querySelector(".portfolio .imgs-container .box2"),
-document.querySelector(".portfolio .imgs-container .box3"),document.querySelector(".portfolio .imgs-container .box4"),document.querySelector(".portfolio .imgs-container .box5"),
-document.querySelector(".portfolio .imgs-container .box6"),document.querySelector(".portfolio .imgs-container .box7")]
+let imgs=Array.from(document.querySelectorAll(".portfolio .imgs-container .box")); 
 let goright = document.querySelector(".landing .fa-angle-right");
 let hide=document.querySelector(".portfolio .hide");
 let more=document.querySelector(".portfolio .more");
@@ -26,6 +24,7 @@ let foot=document.querySelector(".footer .copyright");
 let plans=document.querySelector(".plans");
 let plan=document.querySelectorAll(".plan .head span");
 let start=false;
+
 goright.onclick = function() {
     if (dot3.classList.contains("active") === true) {
         land.style.cssText = "background-image:url(../images/subscribe.jpg);";
@@ -33,7 +32,6 @@ goright.onclick = function() {
         dot2.classList.remove("active");
         dot3.classList.remove("active");
     } else if (dot2.classList.contains("active") === true) {
-         
         land.style.cssText = "background-image:url(../images/mountainblackandwhite.jpg);";
         dot3.classList.add("active");
         dot2.classList.remove("active");
@@ -99,9 +97,9 @@ Photo.onclick=function(){
     imgs[2].style.cssText="display:none;";
     imgs[5].style.cssText="display:none;";
     imgs[6].style.cssText="display:none;";
-    document.querySelector(".portfolio .imgs-container .box0").style.cssText="display:block;";
-    document.querySelector(".portfolio .imgs-container .box3").style.cssText="display:block;";
-    document.querySelector(".portfolio .imgs-container .box4").style.cssText="display:block;";
+    for(var i=0;i<3;i++){
+        imgs[i].style.cssText="display:block;";
+    }
 }
 Web.onclick=function(){
     All.forEach((ele)=>ele.classList.remove("active"));
@@ -111,9 +109,9 @@ Web.onclick=function(){
     imgs[3].style.cssText="display:none;";
     imgs[5].style.cssText="display:none;";
     imgs[4].style.cssText="display:none;";
-    document.querySelector(".portfolio .imgs-container .box1").style.cssText="display:block;";
-    document.querySelector(".portfolio .imgs-container .box7").style.cssText="display:block;";
-    document.querySelector(".portfolio .imgs-container .box6").style.cssText="display:block;";
+    for(var i=3;i<6;i++){
+        imgs[i].style.cssText="display:block;";
+    }
 }
 Print.onclick=function(){
     All.forEach((ele)=>ele.classList.remove("active"));
@@ -123,9 +121,9 @@ Print.onclick=function(){
     imgs[4].style.cssText="display:none;";
     imgs[5].style.cssText="display:none;";
     imgs[6].style.cssText="display:none;";
-    document.querySelector(".portfolio .imgs-container .box0").style.cssText="display:block;";
-    document.querySelector(".portfolio .imgs-container .box2").style.cssText="display:block;";
-    document.querySelector(".portfolio .imgs-container .box3").style.cssText="display:block;";
+    for(var i=6;i<9;i++){
+        imgs[i].style.cssText="display:block;";
+    }
 }
 more.onclick=function(){
     b[0].style.cssText="display:block;";
